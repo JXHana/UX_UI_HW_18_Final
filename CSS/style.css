@@ -17,6 +17,19 @@ h1 {
   font-style: bold;
   Color: #383D40;
 }
+
+h6 {
+    padding: 30px;
+    margin: 0px;
+    font-family: 'POPPINS', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    font-style: bold;
+    Color: #383D40;
+    text-align: center;
+    font-style: bold;
+  }
+
 h2 {
   padding: 0px;
   margin: 0px;
@@ -26,6 +39,17 @@ h2 {
   font-style: bold;
   color: #0468BF
 }
+
+h5 {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    font-style: bold;
+    color: #CA2102
+  }
+
 a {
   padding: 0px;
   margin: 0px;
@@ -84,12 +108,6 @@ li {
     grid-template-columns: 50% 50%;
     grid-template-areas: "project-one project-one"
 }
-.project2 {
-    grid-area: project-one;
-    background-color: yellow;
-}
-
-
 
 @media only all and (max-width: 1000px) {
     body{
@@ -179,19 +197,6 @@ image {
         #content {
             padding: 20px;
         }
-        BUTTON {
-            background-color: #EEE7C1;
-            border:1px solid;
-            border-color: #CFBD53;
-            padding: .75%;
-          }
-        BUTTON:hover {
-            background-color: #CFBD53;
-            border:1px solid;
-            border-color: #EEE7C1;
-            padding: .75%;
-            Color: #EEE7C1;
-          }
         
          /* Responsive Styles */
          @media (max-width: 768px) {
@@ -224,4 +229,186 @@ image {
         .inline-block {
             display: inline-block
         }
+
+        .flex-container {
+            display: flex; /* Makes the container a flex container */
+            flex-direction: row; /* Ensures the items are laid out horizontally */
+            justify-content: space-around; /* Distributes space evenly between items */
+            align-items: center; /* Aligns items vertically centered */
+            height: 15vh; /* Sets the height of the container to the viewport height */
+            background-color: #f0f0f0; /* Light gray background color for visibility */
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .flex-item {
+            background-color: #D0EAFA; /* "Tracing Paper" color background color for items */
+            color: #0468BF; /* "Blue Print" text color */
+            padding: 30px; /* Adds padding inside the items */
+            text-align: center; /* Centers the text inside the items */
+            border-radius: 5px; /* Rounds the corners of the items */
+            flex: 1; /* Makes the items flexible */
+            margin: 10px; /* Adds space between the items */
+            
+        }
+        .flex-item:hover {
+            background-color: #0468BF; /* "Blue Print" color background color for items */
+            color: #F0F4F3; /* "News Print" text color */
+            padding: 30px; /* Adds padding inside the items */
+            text-align: center; /* Centers the text inside the items */
+            border-radius: 5px; /* Rounds the corners of the items */
+            flex: 1; /* Makes the items flexible */
+            margin: 10px; /* Adds space between the items */
+            
+        }
+
+        .flex-container-2 {
+            display: flex; /* Makes the container a flex container */
+            flex-direction: row; /* Ensures the items are laid out horizontally */
+            justify-content: space-around; /* Distributes space evenly between items */
+            align-items: center; /* Aligns items vertically centered */
+            height: 20vh; /* Sets the height of the container to the viewport height */
+            background-color: #F0F4F3; /* "News Print"" background color for visibility */
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .flex-item-2 {
+            background-color: #F7E0EC; /* "Pink Sheet" color background color for items */
+            color: #CA2102; /* "Edit Red" text color */
+            padding: 30px; /* Adds padding inside the items */
+            text-align: center; /* Centers the text inside the items */
+            border-radius: 5px; /* Rounds the corners of the items */
+            flex: 1; /* Makes the items flexible */
+            margin: 10px; /* Adds space between the items */
+            
+        }
+        .flex-item-2:hover {
+            background-color: #CA2102; /* "Edit Red" color background color for items */
+            color: #F0F4F3; /* "News Print" text color */
+            padding: 30px; /* Adds padding inside the items */
+            text-align: center; /* Centers the text inside the items */
+            border-radius: 5px; /* Rounds the corners of the items */
+            flex: 1; /* Makes the items flexible */
+            margin: 10px; /* Adds space between the items */
+            
+        }
+        
+        .projects-list {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            font-family: 'Montserrat', sans-serif;
+            Background-color: #383D40
+        }
+
+        .project-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            background-color: #383D40; /* "News Print"" background for each project item */
+            border-radius: 8px; /* Rounded corners for the project item container */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            overflow: hidden; /* Ensures rounded corners are applied to all content */
+        }
+
+        .project-item img {
+            border-radius: 8px 0 0 8px; /* Rounds the top-left and bottom-left corners of the image */
+            width: 150px; /* Fixed width for the image */
+            height: 150px; /* Fixed height for the image */
+            object-fit: cover; /* Ensures the image covers the specified area */
+        }
+
+        .project-content {
+            padding: 15px;
+            flex: 1; /* Allows the content to take up remaining space */
+            Background-color: #383D40
+        }
+
+        .project-header {
+            font-size: 1.5em;
+            margin: 0;
+            color: #F0F4F3; /* Dark text color for the header */
+            Background-color: #383D40
+        }
+
+        .project-secondary-header {
+            font-size: 1.2em;
+            margin: 5px 0;
+            color: #F0F4F3; /* Darker text color for the secondary header */
+            Background-color: #383D40
+        }
+
+        .project-paragraph {
+            font-size: 1em;
+            margin: 10px 0;
+            color: #EEE7C1; /* Medium text color for the paragraph */
+            Background-color: #383D40
+        }
+
+        .view-project-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #EEE7C1; /* "Canvas" color" background color for the button */
+            color: #777777;
+            text-decoration: none;
+            border-radius: 5px; /* Rounded corners for the button */
+            font-size: 1em;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .view-project-button:hover {
+            background-color: #CFBD53;
+            border:1px solid;
+            border-color: #EEE7C1;
+            padding: .75%;
+            border-radius: 7px; /* Rounds the corners of the button */
+            Color: #EEE7C1;
+            padding: 10px 20px;
+        }
+        BUTTON {
+            background-color: #EEE7C1;
+            border:1px solid;
+            border-color: #CFBD53;
+            padding: .75%;
+            border-radius: 7px; /* Rounds the corners of the button */
+            color: #777777;
+            padding: 10px 20px;
+          }
+        BUTTON:hover {
+            background-color: #CFBD53;
+            border:1px solid;
+            border-color: #EEE7C1;
+            padding: .75%;
+            border-radius: 7px; /* Rounds the corners of the button */
+            Color: #EEE7C1;
+            padding: 10px 20px;
+          }
+          
+          .view-all-projects-button {
+            color: #CA2102;
+            background-color: #F7E0EC; /* Matches the container color */
+            padding: 15px 0;
+            width: 100%;
+            border: none;
+            border-radius: 0;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-color: #CA2102;
+            border-radius: 7px;
+        }
+
+        .view-all-projects-button:hover {
+            background-color: #CA2102; /* "Edit Red" when hovered */
+            padding: 15px 0;
+            width: 100%;
+            border: none;
+            border-radius: 0;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-color: #F7E0EC;
+            border-radius: 7px;
+            color:#F0F4F3
+        }
+
 </style>
