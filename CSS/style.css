@@ -1,0 +1,227 @@
+*{background: #F0F4F3;}
+p {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  font-style: italic;
+  Color: #777777
+}
+h1 {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'POPPINS', sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  font-style: bold;
+  Color: #383D40;
+}
+h2 {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  font-style: bold;
+  color: #0468BF
+}
+a {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  font-style: italic;
+}
+
+h4 {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  font-style: bold
+}
+
+.cities {
+  background-color: black;
+  color: black;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+}
+li {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: semi-bold
+}
+.flex-area {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    background-color: #F0F4F3;
+}
+
+.Profile-photo img {
+    width: 100%;
+    max-height: 500px;
+}
+.flex-section {
+    text-align: left;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    background-color: blue;
+    margin: 0px, 5%;
+    min-height: 700px;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "project-one project-one"
+}
+.project2 {
+    grid-area: project-one;
+    background-color: yellow;
+}
+
+
+
+@media only all and (max-width: 1000px) {
+    body{
+        background-color: white;
+    }
+}
+@font-face (max-width: 1000px) {
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+image {
+    box-align: center;
+    background: #F0F4F3;
+  }
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+<style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #F0F4F3;
+            overflow: hidden;
+            border-bottom: 1px solid #CA2102; /* Adds a red line under the navigation bar */
+            width: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            float: right;
+        }
+
+        nav ul li a {
+            display: block;
+            color: #383D40;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+            color: #F0F4F3;
+        }
+
+        footer nav {
+            background-color: #F0F4F3;
+            overflow: hidden;
+            border-top: 1px solid #0468BF; /* Adds a red line on top of the footer navigation bar */
+        }
+
+        footer nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+       footer nav ul li {
+            float: right;
+        }
+
+        footer nav ul li a {
+            display: block;
+            color: #383D40;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        footer nav ul li a:hover {
+            background-color: #575757;
+            color: #F0F4F3;
+        }
+
+        #content {
+            padding: 20px;
+        }
+        BUTTON {
+            background-color: #EEE7C1;
+            border:1px solid;
+            border-color: #CFBD53;
+            padding: .75%;
+          }
+        BUTTON:hover {
+            background-color: #CFBD53;
+            border:1px solid;
+            border-color: #EEE7C1;
+            padding: .75%;
+            Color: #EEE7C1;
+          }
+        
+         /* Responsive Styles */
+         @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                width: 100%;
+            }
+
+            footer nav ul {
+                flex-direction: column;
+            }
+
+            footer nav ul li {
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul li a {
+                padding: 10px;
+            }
+
+            footer nav ul li a {
+                padding: 10px;
+            }
+        }
+        .inline-block {
+            display: inline-block
+        }
+</style>
